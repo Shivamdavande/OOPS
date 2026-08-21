@@ -99,13 +99,6 @@ int main() {
 
 
 
-
-
-
-
-
-
-
     // //Static
     // Hero a;
 
@@ -113,9 +106,6 @@ int main() {
     // Hero *b = new Hero();
     // //manually destructor call
     // delete b;
-
-
-
 
 
 
