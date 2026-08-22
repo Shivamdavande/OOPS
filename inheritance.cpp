@@ -3,7 +3,7 @@ using namespace std;
 
 class Student {
 
-    protected:
+    private:
        int height;
     public:
        int age;
@@ -20,15 +20,15 @@ class Student {
        }
 };
 
-class Clg: private Student {
+class Clg: public Student {
 
     public:
         string colour;
 
-    void sleep() {
-        cout << "student are sleeping" << endl;
-    }
-    
+    // void sleep() {
+    //     cout << "student are sleeping" << endl;
+    // }
+
     int getHeight() {
         return this->height;
     }
@@ -36,16 +36,16 @@ class Clg: private Student {
 };
 
 
-int main() 
+int main() {
 
     Clg test;
     // cout << test.age << endl;
     // cout << test.weight << endl;
-    test.height;
-    // cout << test.height << endl;
+   
+    cout << test.height << endl;
 
-    cout << test.colour << endl;
-    test.sleep();
+    // cout << test.colour << endl;
+    // test.sleep();
 
     cout << "kee haal haa badshaoo" << endl;
 }
